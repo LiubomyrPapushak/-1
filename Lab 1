@@ -1,0 +1,27 @@
+#include <iostream>
+#include <stdlib.h>
+#include <math.h>
+int g;// оголошення глобальної змінної
+int r;// оголошення глобальної змінної
+int main()
+{
+    int a, b, c, d;// оголошення локальної змінної
+    setlocale(LC_CTYPE, "ukr");
+
+
+    printf("\n перша цифра a=");
+    scanf_s("%d", &a);// введення даних;
+    printf("\n друга цифра b = ");
+    scanf_s("%d", &b);// введення даних;
+    printf("\n третя цифра c=");
+    scanf_s("%d", &c);// введення даних;
+    printf("\n четверта цифра d=");
+    scanf_s("%d", &d);// введення даних;
+    g = (a + b + c + d);
+    r = (a * b * c * d);
+
+    printf("\n Добуток цифр: %d ", g);
+    printf("\n Добуток цифр: %d ", r);
+    
+    return 0;
+}
